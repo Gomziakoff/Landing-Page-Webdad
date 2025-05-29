@@ -1,2 +1,2 @@
 # Landing-Page-Webdad
-Course #1 Landing Page
+Training project by Aliaksei Romaniuk, 13:03 29.05.2025
