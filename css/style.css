@@ -1,6 +1,7 @@
 :root {
     --header-color: #FED100;
     --hero-bg-color: #FED100;
+    --process-bg-color: #FFFFFF;
     --text-color: #333333;
 
     --button-bg-color: #FF352B;
@@ -17,7 +18,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #FFFFFF;
 }
 
 header {
@@ -159,6 +160,8 @@ header {
         height: 19px;
     }
 }
+
+/*hero block*/
 
 .main__hero {
     padding-top: 4rem;
@@ -366,5 +369,166 @@ header {
     .main__hero-image-img1 {
         display: block;
         max-width: 100%;
+    }
+}
+
+/*process block*/
+
+.main__process {
+    margin-top: 6rem;
+    background-color: var(--process-bg-color);
+    align-items: center;
+}
+
+.main__process-container {
+    width: 58%;
+    margin: 0 auto;
+    display: flex;
+}
+
+@media screen and (max-width: 1300px) {
+    .main__process-container {
+        width: 92%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .main__hero-container {
+        width: 100%;
+    }
+}
+
+.main__process-title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.875rem;
+    line-height: 100%;
+    margin: 0;
+    margin-bottom: 3.75rem;
+}
+
+@media screen and (max-width: 400px) {
+    .main__process-title {
+        font-size: 1.25rem;
+        margin-bottom: 2.2rem;
+    }
+}
+
+.main__process-steps {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 9rem;
+    row-gap: 3rem;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .main__process-steps {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
+}
+
+.main__process-step {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-template-areas:
+        "img title"
+        "img text";
+    column-gap: 1.85rem;
+    row-gap: 1rem;
+    align-items: start;
+}
+
+@media screen and (max-width: 400px) {
+    .main__process-step {
+        grid-template-columns: max-content 1fr max-content;
+        grid-template-areas:
+            "img title arrow";
+        row-gap: 0.5rem;
+        column-gap: 1rem;
+        align-items: center;
+
+    }
+
+}
+
+.main__process-step-img {
+    display: flex;
+    grid-area: img;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .main__process-step-img {
+        width: 5.75rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main__process-step-img {
+        width: 3.3rem;
+    }
+}
+
+.main__process-step-title-text {
+    grid-area: title;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 100%;
+    margin: 0;
+}
+
+.main__process-step-title-text.short {
+    display: none;
+}
+
+@media screen and (max-width: 720px) {
+    .main__process-step-title-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main__process-step-title-text {
+        font-size: 1rem;
+        line-height: 130%;
+    }
+
+    .main__process-step-title-text.full {
+        display: none;
+    }
+
+    .main__process-step-title-text.short {
+        display: block;
+    }
+}
+
+.main__process-step-text {
+    grid-area: text;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 131%;
+    margin: 0;
+}
+
+@media screen and (max-width: 400px) {
+    .main__process-step-text {
+        display: none;
+    }
+}
+
+.main__process-step-arrow {
+    display: none;
+}
+
+@media screen and (max-width: 400px) {
+    .main__process-step-arrow {
+        display: block;
+        width: 1rem;
+        height: 1rem;
+        grid-area: arrow;
+        justify-items: end;
+        margin: 0;
     }
 }
