@@ -562,7 +562,7 @@ header {
     .main__prices-title {
         font-size: 1.25rem;
     }
-    
+
 }
 
 .main__prices-subtitle {
@@ -577,7 +577,7 @@ header {
     .main__prices-subtitle {
         font-size: 1rem;
     }
-    
+
 }
 
 .main__prices-container {
@@ -593,7 +593,7 @@ header {
     .main__prices-container {
         width: 91%;
     }
-    
+
 }
 
 .main__prices-container.text {
@@ -618,7 +618,7 @@ header {
         width: 91%;
         margin-bottom: 0;
     }
-    
+
 }
 
 .main__prices-block {
@@ -659,7 +659,7 @@ header {
         max-width: 100%;
         height: auto;
     }
-    
+
 }
 
 .main__prices-block-title {
@@ -764,5 +764,346 @@ header {
         font-size: 1rem;
         line-height: 131%;
     }
-    
+
+}
+
+/*autos*/
+
+.main__autos {
+    max-width: 63.75%;
+    margin: 0 auto;
+    margin-top: 6.375rem;
+    padding-bottom: 2.875rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .main__autos {
+        max-width: 100%;
+    }
+}
+
+.main__autos-title-container {
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .main__autos-title-container {
+        margin-bottom: 2.875rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main__autos-title-container {
+        margin-bottom: 0rem;
+    }
+}
+
+.main__autos-title {
+    font-size: 1.875rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 400px) {
+    .main__autos-title {
+        font-size: 1.25rem;
+    }
+}
+
+.main__autos-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 400px) {
+    .main__autos-subtitle {
+        font-size: 1rem;
+    }
+}
+
+.main__autos-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    margin-bottom: 2.875rem;
+}
+
+@media screen and (max-width:400px) {
+    .main__autos-tabs {
+        margin-bottom: 0;
+    }
+}
+
+.main__autos-tab-btn {
+    max-width: 200px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 3.125rem;
+    background-color: var(--process-bg-color);
+    color: #000;
+    border: 1px solid #EBEBEB;
+    font-weight: 500;
+    font-size: 1.125rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.main__autos-tab-btn:hover {
+    border-color: #FED100;
+}
+
+.main__autos-tab-btn--active {
+    border-color: #FED100;
+}
+
+@media screen and (max-width: 1200px) {
+    .main__autos-tab-btn {
+        max-width: 180px;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        border: none;
+        font-size: 1.5rem;
+        transition: text-decoration-color 0.3s;
+    }
+
+    .main__autos-tab-btn:hover {
+        text-decoration: underline;
+        text-decoration-color: #FED100;
+    }
+
+    .main__autos-tab-btn--active {
+        text-decoration: underline;
+        text-decoration-color: #FED100;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .main__autos-tab-btn {
+        font-size: 0.875rem;
+
+    }
+}
+
+.main__autos-slider {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.main__autos-tab-content-wrapper {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.main__autos-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    touch-action: pan-y;
+}
+
+.main__autos-tab-content {
+    flex: 0 0 100%;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width:1200px) {
+    .main__autos-tab-content {
+        flex-direction: column;
+    }
+
+}
+
+.main__autos-info {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1200px) {
+    .main__autos-info {
+        display: none;
+    }
+}
+
+.main__autos-info-model {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 2.125rem;
+}
+
+.main__autos-info-specs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0;
+}
+
+.main__autos-info-item {
+    display: flex;
+    align-items: start;
+    line-height: 131%;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 1.85rem;
+}
+
+.main__autos-info-item img {
+    margin-right: 1rem;
+}
+
+.main__autos-info-btn {
+    display: inline-block;
+    max-width: 250px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 3.125rem;
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    font-weight: 500;
+    font-size: 1.125rem;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 5rem;
+}
+
+.main__autos-info-btn:hover {
+    background-color: #ffbb00;
+}
+
+.main__autos-image {
+    flex: 1;
+    text-align: center;
+}
+
+.main__autos-image-img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+.main__autos-mobile-caption {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .main__autos-mobile-caption {
+        display: flex;
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main__autos-mobile-caption {
+        display: flex;
+        font-size: 0.75rem;
+        font-weight: 400;
+    }
+}
+
+.main__autos-arrow {
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+@media screen and (max-width:1200px) {
+    .main__autos-arrow {
+        display: none;
+    }
+}
+
+.main__autos-arrow:hover {
+    opacity: 0.7;
+}
+
+.main__autos-arrow--left {
+    margin-right: 1rem;
+}
+
+.main__autos-arrow--right {
+    margin-left: 1rem;
+}
+
+.main__autos-dots,
+.main__autos-mobile-btn-wrapper {
+    display: none;
+}
+
+@media screen and (max-width:1200px) {
+    .main__autos-dots {
+        display: flex;
+        justify-content: center;
+        gap: 0.75rem;
+        margin: 1rem 0;
+    }
+
+    .main__autos-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #2c2c2c;
+        opacity: 1;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        position: relative;
+        box-sizing: content-box;
+        border: 6px solid #ffffff;
+    }
+
+    .main__autos-dot.active {
+        background-color: transparent;
+        border: 2px solid #FED100;
+        width: 16px;
+        height: 16px;
+        opacity: 1;
+    }
+
+    .main__autos-dot.active::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 10px;
+        height: 10px;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background-color: #2c2c2c;
+    }
+
+    .main__autos-mobile-btn-wrapper {
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .main__autos-mobile-btn {
+        display: inline-block;
+        max-width: 250px;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        line-height: 3.125rem;
+        background-color: #ffcc00;
+        color: #000;
+        border: none;
+        font-weight: 500;
+        font-size: 1.125rem;
+        text-decoration: none;
+        cursor: pointer;
+        margin-bottom: 5rem;
+        transition: background-color 0.2s;
+    }
+
+    .main__autos-info-btn:hover {
+        background-color: #ffbb00;
+    }
 }
