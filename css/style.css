@@ -628,6 +628,7 @@ header {
     max-width: 26.31rem;
     height: 36.1875rem;
     border: 1px solid #EBEBEB;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
@@ -657,7 +658,10 @@ header {
         max-width: 100%;
         height: auto;
     }
+}
 
+.main__prices-block:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 .main__prices-block-title {
@@ -737,7 +741,8 @@ header {
 }
 
 .main__prices-block-button:hover {
-    background-color: #ffbb00;
+    box-shadow: 0 4px 20px rgba(254, 209, 0, 0.5);
+    color: var(--process-bg-color);
 }
 
 .main__prices-block-button-all {
